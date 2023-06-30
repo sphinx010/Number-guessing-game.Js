@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Luckiest+Guy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    box-sizing: border-box;
+}
+body{
+    backdrop-filter: blur(50px);
+    background-color: #2770d6;
+}
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.form-section{
+    margin: 24px  auto;
+    border: 1px solid black;
+    width: 600px;
+    height: 40vh;
+    box-shadow: #0000008f -2px 2px 5px;
+    border-radius: 3px;
+    background-color: #00000005;
+    display: flex;
+    justify-content: center;
+}
+#mid{
+    margin: 2em auto;
+    border: 1px solid black;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mid:hover{
+    background: radial-gradient(circle, #385ba5, #7525e2, #c97a0b);
+	background-size: 200% 70%;
+	animation: gradient-animation 6s ease infinite;
+    overflow-x: hidden;
+    color: #ffa200;
+}
+
+button{
+    width: 50px;
+    height: 22px;
+    border: 1px solid rgba(255, 242, 0, 0.463);
+    border-radius: 2px;
+    background-color: #1e5aae;
+}
+
+button p:hover{
+    color: #ffa200;
+    -webkit-text-stroke: #000000 0.1px ;
+    font-size: 1.2em;
+}
+
+.but1{
+margin-left: 90px;
+}
+.controls{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.controls p{
+    font-size: 1em;
+}
+
+.user-guess input{
+    width: 200px;
+    border-radius: 4px;
+    background-color: rgba(240, 248, 255, 0.593);
+    height: 30px;
+    border: 1px black solid;
+    padding-left: 5px;
+}
+
+.answer input{
+    width: 200px;
+    margin: 9px;
+    border-radius: 4px;
+    background-color: rgba(240, 248, 255, 0.593);
+    height: 30px;
+    border: 1px black solid;
+    padding-left: 5px;
+}
+
+.user-guess input:hover{
+background-color: #ffa600;
+}
+.answer input:hover{
+    background-color: #ffa600;
+}
