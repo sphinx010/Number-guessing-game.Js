@@ -13,6 +13,7 @@ function crossCheck() {
     resultText.textContent = 'Invalid input. Please enter a number.';
   } else if (userGuess === generatedNumber) {
     resultText.textContent = 'Congratulations! Your guess is correct.';
+    resultText.style.color = 'yellow';
   } else {
     resultText.textContent = 'Oops! Your guess is incorrect. Try again.';
   }
